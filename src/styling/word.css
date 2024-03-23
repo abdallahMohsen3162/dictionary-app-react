@@ -1,0 +1,30 @@
+
+:root{
+   --main-color:#0a092d;
+   --light-color:#dad8d8;
+ }
+ 
+ *{
+   padding: 0;
+   margin: 0;
+   
+ }
+
+.box{
+   border: 1px solid white;
+   width: fit-content;
+   padding: 10px;
+   background-color: var(--main-color);
+   color: gray;
+   border-radius: 6px;
+   align-self: start !important;
+}
+
+.box h4{
+   cursor: pointer;
+}
+
+.popup{
+   border-top:1px solid gray;
+   padding-top: 5px;
+}

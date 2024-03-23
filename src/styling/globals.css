@@ -1,0 +1,76 @@
+:root{
+  --main-color:#0a092d;
+  --light-color:#dad8d8;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+
+body{
+  background-color: var(--main-color) !important;
+  color: var(--light-color) !important;
+}
+
+.nav .controller{
+  background-color: transparent !important;
+  border: none;
+  color: var(--light-color);
+  transition-duration: 0.5s;
+}
+
+.nav .controller:hover{
+  opacity: 0.8;
+  transition-duration: 0.5s;
+}
+
+.active{
+  border-bottom: 2px solid white !important;
+
+}
+.usernameStyle{
+  position: relative;
+}
+.usernameStyle::before{
+  position: absolute;
+  background-color: white;
+  top: 120%;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  content: "";
+  
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #7983ff; /* Change the color as needed */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.checkbox{
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox div{
+  display: flex;
+  gap: 5px;
+}
+
+.generator{
+  padding:10px;
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+}

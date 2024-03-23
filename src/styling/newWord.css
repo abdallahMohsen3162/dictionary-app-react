@@ -1,0 +1,26 @@
+.newWord{
+   display: flex;
+   flex-direction: column;
+   gap: 3px;
+   align-items: center;
+   border: 1px solid white;
+   padding: 5px;
+   max-width: 1170px;
+   margin: auto;
+}
+
+.newWord input{
+   border-radius: 6px;
+   padding: 20px 10px;
+}
+
+.newWord *{
+   width: 100%;
+}
+
+.newWord button{
+   margin-top: 15px;
+}
+.newWord input[name="arabic-text"] {
+   direction: rtl;
+}
